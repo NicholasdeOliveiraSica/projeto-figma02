@@ -1,1 +1,43 @@
 @charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+main {
+    display: flex;
+    justify-content: space-between;
+}
+
+main .dentro {
+    display: block;
+    background-color: #E5E5EA;
+    width: 40vw; height: 100vh;
+}
+
+main .dentro header {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 10%;
+    width: 100%;
+}
+
+main .dentro header a {
+    font: normal 400 28px 'Oswald';
+    color: #5D5D7D;
+    text-decoration: none;
+}
+
+main .dentro header a.selected {
+    color: #AFAFBE;
+}
+
+main .dentro img {
+    position: relative;
+    top: 50%;
+    left: 0;
+    transform: translate(-30%, -50%);
+}
