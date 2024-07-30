@@ -12,6 +12,58 @@ main {
     justify-content: space-between;
 }
 
+main .fora {
+    width: 60vw;
+}
+
+main .fora div {
+    max-width: 550px;
+    position: relative;
+    top: 55%; left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+main .fora h1 {
+    color: #5D5D7D;
+    font: normal 400 70px 'Oswald';
+    cursor: default;
+}
+
+main .fora h1:hover {
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+
+main .fora p {
+    color: #9e9eb1;
+    font: normal 400 28px 'Oswald';
+    margin-top: 15px;
+    cursor: default;
+} 
+
+main .fora p:hover {
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+
+main .fora button {
+    background-color: #9499EA; color: white;
+    width: 270px; height: 65px;
+    border-radius: 30px; border: none;
+    font: normal 400 24px 'Oswald';
+    margin-top: 15px;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.521);
+    transition-duration: 0.2s;
+}
+
+main .fora button:hover {
+    color: rgb(233, 233, 233);
+    cursor: pointer;
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.199);
+    transform: scale(1.02);
+    transition-duration: 0.2s;
+}
+
 main .dentro {
     display: block;
     background-color: #E5E5EA;
@@ -23,6 +75,7 @@ main .dentro header {
     justify-content: space-between;
     padding: 20px 10%;
     width: 100%;
+    height: 50px;
 }
 
 main .dentro header a {
@@ -31,13 +84,96 @@ main .dentro header a {
     text-decoration: none;
 }
 
+main .dentro header a:hover {
+    transform: scale(1.2);
+    transition-duration: 0.3s;
+}
+
 main .dentro header a.selected {
     color: #AFAFBE;
 }
 
 main .dentro img {
     position: relative;
-    top: 50%;
+    top: 40%;
     left: 0;
     transform: translate(-30%, -50%);
+}
+
+main .dentro img:hover {
+    transform: scale(1.02) translate(-30%, -50%);
+    transition: transform 0.2s;
+}
+
+@media (max-width: 1300px) {
+    
+main .fora div {
+    width: 400px;
+}
+
+main .fora h1 {
+    font-size: 60px;
+}
+
+main .fora p {
+    font-size: 24px;
+}
+
+main .dentro img{
+    width: 300px;
+}}
+
+@media (max-width: 900px) {
+
+main {
+    flex-direction: column;
+}
+
+main .fora, main .dentro {
+    height: 50vh;
+    width: 100vw;
+}
+
+main .fora div {
+    max-width: 80vw;
+    margin-top: -20px;
+}
+
+main .fora h1 {
+    font-size: 36px;
+    text-align: center;
+}
+
+main .fora p {
+    font-size: 14px;
+    text-align: center;
+    margin-bottom: 20px;
+    
+}
+
+main .fora button {
+    display: block;
+    margin: auto;
+}
+
+main .dentro header {
+    display: none;
+}
+
+main .dentro  {
+    padding: 10px;
+}
+
+main .dentro img {
+    width: auto;
+    height: 80%;
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+main .dentro img:hover {
+    top: 50%; left: 50%;
+    transform: translate(-50%, -50%);
+}
+
 }
