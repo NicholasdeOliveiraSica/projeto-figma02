@@ -59,9 +59,12 @@ main .fora button {
 main .fora button:hover {
     color: rgb(233, 233, 233);
     cursor: pointer;
-    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.199);
     transform: scale(1.02);
     transition-duration: 0.2s;
+}
+
+main .fora button:active {
+    box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.199);
 }
 
 main .dentro {
